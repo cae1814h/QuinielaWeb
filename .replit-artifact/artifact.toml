@@ -1,0 +1,22 @@
+kind = "web"
+previewPath = "/quiniela-php/"
+title = "Quiniela PHP"
+version = "1.0.0"
+id = "artifacts/quiniela-php"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/quiniela-php/" ]
+localPort = 18376
+
+[services.development]
+run = "pnpm --filter @workspace/quiniela-php run dev"
+
+[services.env]
+PORT = "18376"
+BASE_PATH = "/quiniela-php/"
